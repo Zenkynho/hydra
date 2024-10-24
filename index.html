@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra Launcher</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Mundo aberto</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">RPG</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Puzzle</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Simulador</a>
+        </li>
+      </ul>
+      <img src="img/Logo.png" alt="Logo da Hydra" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe o que jogar?</h2>
+    <p class="banner__texto">Encontre seu jogo preferido por um preço acessível!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Que jogo deseja buscar?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/enigma.jpg"
+            alt="Jogo Enigma do Medo"></div>
+        <div class="swiper-slide"><img src="img/1.png"
+            alt="Jogo Red Dead Redemption 2"></div>
+        <div class="swiper-slide"><img src="img/3.png" alt="Jogo Hollow Knight Silksong">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/4.png" alt="Jogo Euro Truck Simulator 2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/ittaketwo.png" alt="Jogo It Take Two" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/6.png" alt="Jogo Poppy Playtime" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Among Us VR</h2>
+          <p class="descrição__texto">
+            Among Us VR é um jogo sobre trabalho de equipe e traição. Com sua equipe, descubra quem é o impostor e o elimine da nave!
+          </p>
+        </div>
+        <img src="img/among.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Compre agora</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais jogados</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/7.png"
+            alt="Terraria"></div>
+        <div class="swiper-slide"><img src="img/8.png" alt="Rainbow Six">
+        </div>
+        <div class="swiper-slide"><img src="img/9.png" alt="Dragon Ball Sparkling Zero">
+        </div>
+        <div class="swiper-slide"><img src="img/10.png" alt="Doki Doki Literature Club"></div>
+        <div class="swiper-slide"><img src="img/11.png" alt="Bendy and the Ink Machine"></div>
+        <div class="swiper-slide"><img src="img/2.png" alt="Hollow Knight"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Jogo do Mês</h3>
+          <h2 class="descrição__titulo-livro">Black Myth Wukong</h2>
+          <p class="descrição__texto">Black Myth: Wukong é um RPG de ação inspirado na mitologia chinesa. ‎  A história é baseada em "Jornada para o Oeste", um dos Quatro Grandes Romances Clássicos da literatura do país.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/wukong.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Compre agora</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">RPG</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Simulador</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Dating</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Pesca</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Terror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Hack & Slash</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Roguelike</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ação</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro de novas promoções!</h2>
+    <p class="contato__texto">
+      Atualizações do catálogo, novos jogos, promoções e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Hydra Launcher</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
